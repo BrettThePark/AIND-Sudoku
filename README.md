@@ -3,11 +3,11 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
-A: *Student should provide answer here*
+A: In the case of naked twins (or triplets, quadruplets, etc) we know that if the available solutions for a box are identical to that of other boxes in a unit and number of possibles digits for that box is also identical to the number of identical boxes, then the solution for those digits must be wholy contained within the set of boxes that have the identical digits. In the case of twins, if two boxes in a unit have two identical possible values (A,B) then we know that all other boxes cannot contain A or B.
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: *Student should provide answer here*
+A: The diagonal sudoku problem is a minor addition to the general sudoku problem. In order to use it we must treat the two diagonals as two additional units. When performing the elimate, only choice, or naked twin constraint method we simply consider the diagonal units as two additional units that need to be solved since they share the same constraints as the rest of the units (each diagonal unit must contain one and only one value from 1-9).
 
 ### Install
 
